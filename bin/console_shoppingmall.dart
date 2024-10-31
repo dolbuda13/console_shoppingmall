@@ -12,7 +12,7 @@ class Product {
 class ShoppingMall{
   List <Product> products = [];
   int totalprice = 0;
-
+//git test
   ShoppingMall(this.products); //생성인자 
 
   void showProducts(){
