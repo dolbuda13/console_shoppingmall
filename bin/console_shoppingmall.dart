@@ -26,6 +26,10 @@ class ShoppingMall{
     totalprice += product.price * quantity;
   }
 
+  void showTotal() {
+    print('장바구니에 $totalprice 원 어치를 담으셨네요 !'); // 총 가격 출력
+  }
+
 }
 
 void main() {
@@ -83,8 +87,9 @@ for (var product in showmall.products) {
     }
 
     
-  }else if (menu == 3){
-
+  }else if (menu == 3){//장바구니에 담긴 상품들의 총 가격
+    showmall.showTotal();
+    
   }else if (menu == 4){
     onoff = false; //4가 입력됐으므로 반복문 종료
   }else{
